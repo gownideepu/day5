@@ -1,0 +1,36 @@
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Relational Operators =>
+2
+    Assume variable a = 10 and variable b = 20 --->
+
+-eq    =>    =    =>    [ $a -eq $b ] is not true.
+-ne    =>   !=    =>    [ $a -ne $b ] is true.
+-gt    =>   >    =>    [ $a -gt $b ] is not true.
+-lt    =>   <    =>    [ $a -lt $b ] is true.
+-ge    =>   >=   =>    [ $a -ge $b ] is not true.
+-le    =>   <=   =>    [ $a -le $b ] is true.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Boolean Operators (logical) =>
+
+    Assume variable a holds 10 and variable b holds 20 --->
+
+!    =>    not   =>    [ ! false ] is true.
+-o    =>    or    =>    [ $a -lt 20 -o $b -gt 100 ] = [ 10 -lt 20 -o 20 -gt 100] is true.
+-a    =>    AND    =>    [ $a -lt 20 -a $b -gt 100 ] = [ 10 -lt 20 -a 20 -gt 100 ]is false.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+String Operators =>
+
+    Assume variable a holds "abc" and variable b holds "efg" --->
+
+=    =>    Checks if the value of two operands are equal or not; if yes, then the condition becomes true.    =>    [ $a = $b ] is not true.
+!=    =>    Checks if the value of two operands are equal or not; if values are not equal then the condition becomes true.    =>    [ $a != $b ] is true.
+-z    =>    Checks if the given string operand size is zero; if it is zero length, then it returns true.    =>    [ -z $a ] is not true.
+-n    =>    Checks if the given string operand size is non-zero; if it is nonzero length, then it returns true.    =>    [ -n $a ] is not false.
+str    =>    Checks if str is not the empty string; if it is empty, then it returns false.    => [ $a ] is not false.
